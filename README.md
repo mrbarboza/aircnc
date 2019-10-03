@@ -12,7 +12,7 @@ Semana OmniStack 9 | Rocketseat
 ## Dia 02
 
 - Criação e Configuração de [Mongodb](https://www.mongodb.com/cloud/atlas)
-- Desenvolvimento Backend:
+- Desenvolvimento Backend utilizando [Express](https://expressjs.com):
   - Criação API de Session
   - Criação API de Spot
   - Criação API de Dashboard
