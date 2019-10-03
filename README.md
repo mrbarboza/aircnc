@@ -20,4 +20,11 @@ Semana OmniStack 9 | Rocketseat
 
 ## Dia 03
 
-...Esperando
+- Criação de páginas utilizando [React](https://reactjs.org/) e usando chamada de API via [axios](https://github.com/axios/axios)
+  - Página de Login chamando API de Session
+  - Página de Dashboard chamando API de Dashboard
+  - Página de Novo Spot chamando API de Spot
+
+## Dia 04
+
+...Esperado
