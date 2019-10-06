@@ -34,4 +34,4 @@ Semana OmniStack 9 | Rocketseat
 
 ## Dia 05
 
-... Aguardando
+- Implementação do [Socket.io](https://socket.io) para fazer agendamento e aprovação de reserva
