@@ -23,8 +23,15 @@ Semana OmniStack 9 | Rocketseat
 - Criação de páginas utilizando [React](https://reactjs.org/) e usando chamada de API via [axios](https://github.com/axios/axios)
   - Página de Login chamando API de Session
   - Página de Dashboard chamando API de Dashboard
-  - Página de Novo Spot chamando API de Spot
+  - Página de Novo Spot chamando API de Spot (post)
 
 ## Dia 04
 
-...Esperado
+- Criação de aplicação mobile utilizando React [Native](https://facebook.github.io/react-native/) fazendo chamadas de API via [axios](https://github.com/axios/axios)
+  - View de Login chamando API de Session
+  - View de Spots chamando API de Spot (get)
+  - View de Booking chamando API de Spot (post) de Bookings
+
+## Dia 05
+
+... Aguardando
