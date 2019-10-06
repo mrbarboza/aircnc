@@ -1,25 +1,21 @@
 const express = require("express");
+const routes = require("./routes");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
-
-const http = require("http");
 const socketio = require("socket.io");
+const http = require("http");
 
-const routes = require("./routes");
+require("dotenv").config();
 
 const app = express();
+const server = http.Server(app);
+const io = socketio(server);
 
-mongoose.connect(
-  "mongodb+srv://mrbarboza:J0hnnyW4lk3r@aircnc-79ony.mongodb.net/semana09?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  }
-);
-
-const server = app.listen(443);
-const io = socketio.listen(server);
+mongoose.connect(process.env.DB_LOGIN, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 const connectedUsers = {};
 
@@ -39,3 +35,5 @@ app.use(cors());
 app.use(express.json());
 app.use("/files", express.static(path.resolve(__dirname, "..", "uploads")));
 app.use(routes);
+
+server.listen(443);
